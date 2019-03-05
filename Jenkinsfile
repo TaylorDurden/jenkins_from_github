@@ -16,7 +16,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh 'sudo -H pip install -r requirements.txt'
+        sh 'cd test_git && sudo -H pip install -r requirements.txt'
       }
     }
     stage('run') {
