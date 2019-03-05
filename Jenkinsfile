@@ -21,7 +21,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'cd test_git && nohup python -u app.py > error.log 2>&1 &'
+        sh 'cd test_git && python app.py &'
       }
     }
   }
