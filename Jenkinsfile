@@ -21,7 +21,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'python app.py'
+        sh 'cd test_git && python app.py'
       }
     }
   }
