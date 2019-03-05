@@ -9,7 +9,7 @@ pipeline {
     stage('git') {
       steps {
         dir(path: '/home/wolverine/jenkins_from_github') {
-          git(url: 'git@github.com:TaylorDurden/jenkins_from_github.git', credentialsId: '3118a854497d64e27f38cbdb1a4ec2b268ef97fd')
+          git(url: 'git@github.com:TaylorDurden/jenkins_from_github.git', credentialsId: 'da3d69ea309b2f1917862b4919b841cf7dd093b5')
         }
 
       }
