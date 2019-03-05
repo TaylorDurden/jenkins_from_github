@@ -21,7 +21,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'cd test_git && LC_ALL=C.UTF-8 LANG=C.UTF-8 FLASK_APP=app.py nohup flask run >/dev/null 2>&1 &'
+        sh 'cd test_git && nohup python app.py &'
       }
     }
   }
